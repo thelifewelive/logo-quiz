@@ -1,0 +1,279 @@
+html {
+	box-shadow: inset 0px 0px 300px lightblue;
+	height: 100%;
+}
+
+#inputs {
+	margin-top: 25px;
+}
+
+.input {
+	outline: none;
+	border: 1px solid black;
+	width: 25px;
+	height: 25px;
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px grey;
+	text-transform: uppercase;
+}
+
+#time {
+	font-family: 'Comfortaa', cursive;
+	font-size: 30px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	padding-top: 30px;
+	color: #77ff33;
+}
+
+#box {
+	box-shadow: 0px 0px 20px black;
+	border-radius: 20px;
+	width: 40%;
+	padding-bottom: 30px;
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+#logo {
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+	padding: 20px;
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px black;
+	padding: 30px;
+}
+
+/* Játék */
+#game {
+	display: none;
+}
+
+/* Főmenü */
+#main-title {
+	margin-top: 100px;
+}
+
+#name-label {
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 13px;
+	font-family: 'Comfortaa', cursive;
+}
+
+#name-field {
+	position: relative;
+	outline: none;
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px black;
+	font-size: 20px;
+}
+
+.menu-button {
+	outline: none;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 30px;
+	background-color: #3399ff;
+	height: 50px;
+	width: 200px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Permanent Marker', cursive;
+	cursor: pointer;
+	transition: 0.5s;
+	box-shadow: 0px 0px 5px black;
+	border: none;
+}
+
+#start-button {
+	background-color: #77ff33;
+}
+
+#start-button:hover {
+	background-color: #3399ff;
+}
+
+#how-to-play:hover {
+	background-color: #ff6600;
+}
+
+h1 {
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 50px;
+	line-height: 20px;
+	margin-top: 0px;
+}
+
+h2 {
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	color: #3399ff;
+	font-size: 20px;
+}
+
+span {
+	font-size: 20px;
+	color: #3399ff;
+}
+
+#result {
+	margin-top: 50px;
+	font-family: 'Comfortaa', cursive;
+	font-size: 13px;
+}
+
+.Gamebutton {
+	outline: none;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 30px;
+	background-color: #3399ff;
+	height: 30px;
+	width: 200px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Permanent Marker', cursive;
+	cursor: pointer;
+	transition: 0.5s;
+	box-shadow: 0px 0px 5px black;
+	border: none;
+}
+
+#check {
+	background-color: #77ff33;
+}
+
+@keyframes acceptPulse {
+    100% {
+        box-shadow: 0px 0px 20px #73e600;
+    }
+}
+
+.accept-pulse {
+    animation-name: acceptPulse;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes deniedPulse {
+    100% {
+        box-shadow: 0px 0px 20px #cc5200;
+    }
+}
+.denied-pulse {
+    animation-name: deniedPulse;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#controlls {
+	position: absolute;
+}
+
+#music-button {
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	outline: none;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: 0.5s
+}
+
+#music-button:hover {
+	background-color: white;
+	color: black;
+	border-radius: 0px;
+	border: 2px solid black;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 100%;
+	margin-left: -10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+	font-family: 'Comfortaa', cursive;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+#scoreboard {
+	display: none;
+	opacity: 0;
+	background-color: white;
+	width: 60%;
+	box-shadow: 0px 0px 5px black;
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 22px;
+}
+
+#scores td, th, tr {
+	font-family: 'Comfortaa', cursive;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+#scores th {
+	font-size: 20px;
+}

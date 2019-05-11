@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Logo Quiz</title>
+
+		<!-- Scripts -->
+		<script src="Javascript/jquery-3.3.1.min.js"></script>
+		<script src="Javascript/handlePage.js"></script>
+
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="Styles/design.css">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+	</head>
+
+	<footer>
+			<button id="music-button">♬</button>
+	</footer>
+
+	<body>
+		<audio id="music" autoplay="true" src="Sources/music.mp3"></audio>
+		<script>
+
+			document.getElementById('music').volume = 0.15;
+
+		</script>
+		<!-- Főmenü -->
+		<div id="mainmenu">
+			<h1 id=main-title>Logo Quiz<span><br>Multimédia beadandó</span></h1>
+			<div align="center">
+				<label id="name-label" for="name-field">Write your name here</label>
+				<input id="name-field" type="text"></input>
+			</div>
+			<button id="start-button" class="menu-button">Start Game</button>
+		</div>
+
+		<!-- Játék -->
+		<div id="game">
+			<h1 id="playerName">PlayerName<span id="playerScore"></span></h1>
+
+			<div id="box">
+				<!-- Ide jön minden -->
+				<p id="time">60</p>
+				<img id="logo">
+
+				<div id="inputs">
+				</div>
+
+				<p id="result">If you have filled the inputs press the check button</p>
+				<button id="check" class="Gamebutton">Check</button>
+				<button id="reset" class="Gamebutton">Reset</button>
+				<button id="hint" class="Gamebutton">Hint</button>
+			</div>
+		</div>
+
+		<div id="scoreboard">
+			<h1 style="margin-top: 30px;" id=main-title>Logo Quiz<span><br>Multimédia beadandó</span></h1>
+			<h3>Scoreboard</h3>
+			<table align="center" id="scores">
+				<th>Name</th>
+				<th>Score</th>
+				<th>Hint</th>
+				<tr><td>helo</td><td>2</td><td>1</td></tr>
+			</table>
+			<button id="exit" class="Gamebutton">Exit</button>
+		</div>
+
+
+		<div id="snackbar"></div>
+	</body>
+	<script>
+		windowListener();
+	</script>
+</html>
