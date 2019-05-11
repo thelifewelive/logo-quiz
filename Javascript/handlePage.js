@@ -67,17 +67,18 @@ $(document).ready(() => {
 			$('#playerScore').text('Score ' + player.score);
 			$('#playerHints').text(' Hints ' + player.hints);
 
-			$('#mainmenu').animate({
-				opacity: 0
-			}, 800, () => {
-				$('#mainmenu').css('display', 'none');
-				$('#game').css('display', 'block');
-				$('#game').animate({
-					opacity: 1
-				}, 800);
-			});
-
-			startGame();
+			setTimeout(() => {
+				$('#mainmenu').animate({
+					opacity: 0
+				}, 800, () => {
+					$('#mainmenu').css('display', 'none');
+					$('#game').css('display', 'block');
+					$('#game').animate({
+						opacity: 1
+					}, 800);
+				});
+				startGame();
+			}, 1000);
 		}
 	});
 
