@@ -10,4 +10,4 @@ It will install the recommend packages, start a local server on the 4040 port an
 The game will appear.
 
 !! ATTENTION !!
-The games uses cookies about your nickname, scores, and hints.
+**The games uses cookies about your nickname, scores, and hints.**
